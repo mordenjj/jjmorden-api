@@ -25,7 +25,7 @@ def health_check():
     return jsonify({"status": "ok"}), 200
 
 
-@app.route("/salary-prediction/api/v1/salary", methods=["POST"])
+@app.route("/predict", methods=["POST"])
 def predict():
     """
     Predict salary based on input JSON payload
